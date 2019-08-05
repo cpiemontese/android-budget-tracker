@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Budget Tracking</string>
     <string name="google_app_id">budget-tracker-b377c</string>
-    <string name="google_api_key">AIzaSyAgi9M5GoMH8scVBaVx8LjyXIL-D6T_BVM</string>
 
     <!-- activity titles -->
     <string name="submitExpenseActivityTitle">Submit expense</string>
