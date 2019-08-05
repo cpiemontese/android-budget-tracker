@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Budget Tracking</string>
+    <string name="google_app_id">budget-tracker-b377c</string>
+    <string name="google_api_key">AIzaSyAgi9M5GoMH8scVBaVx8LjyXIL-D6T_BVM</string>
+
+    <!-- activity titles -->
+    <string name="submitExpenseActivityTitle">Submit expense</string>
+    <string name="browseExpensesActivityTitle">Browse daily expenses</string>
+    <string name="managePlannedPeriodicActivityTitle">Planned and periodic expenses</string>
+    <string name="submitPeriodicActivityTitle">Submit Periodic Expense</string>
+    <string name="submitPlannedActivityTitle">Submit Planned Expense</string>
+    <string name="expenseStatisticsActivityTitle">Expense Statistics</string>
+    <string name="settingsActivityTitle">Settings</string>
+    <!-- activities titles -->
+
+    <!-- main.xml button texts -->
+    <string name="add_new_expense">Add new expense</string>
+    <string name="manage_planned_and_periodic_expenses">Manage Planned and Periodic Expenses</string>
+    <string name="browse_expenses">Browse Expenses</string>
+    <string name="expense_statistics">Expense Statistics</string>
+    <!-- main.xml button texts -->
+
+    <!-- expense submission texts -->
+    <string name="submitBtnText">Submit expense</string>
+    <string name="dateTextViewText">Date</string>
+    <string name="amountLabelText">Amount</string>
+    <string name="categoryEditTextDefault">(e.g. food, medical expenses, …)</string>
+    <string name="descriptionEditTextDefault">(e.g. a very nice dress, …)</string>
+    <string name="categoryLabelText">Category</string>
+    <string name="descriptionLabelText">Description</string>
+    <string name="placePickerBtnText">Pick a location</string>
+
+    <string name="no_place_dialog_text">You need to pick a place</string>
+    <string name="no_place_dialog_btn">OK</string>
+    <string name="google_play_not_available_errormsg">Google play services is not available</string>
+    <string name="no_amount_err">You need to set an amount</string>
+    <string name="no_date_err">You need to insert a date</string>
+    <!-- expense submission texts -->
+
+    <!-- expense browsing texts -->
+    <string name="expenses_list_noloc">Bought at: no location provided</string>
+    <string name="expenses_list_nocat">Category: no category provided</string>
+    <string name="expenses_list_nodesc">Description: no description provided</string>
+    <string name="expenses_list_nodate">Date: no date provided</string>
+    <string name="expenses_list_noamount">Amount: no amount provided</string>
+    <string name="expenses_list_nodeadline">Starting date: no date provided</string>
+    <string name="expenses_list_nonextdeadline">Next deadline: this is a one time expense (see deadline)</string>
+
+    <string name="browseExpensesBoughtAt">"Bought at: "</string>
+    <string name="browseExpensesCategory">Category: </string>
+    <string name="browseExpensesRemaningBudget">Budget: </string>
+
+    <string name="createPDFBtn">Generate Report</string>
+    <string name="delete_all_expenses">Delete all expenses</string>
+
+    <!-- expense browsing texts -->
+
+    <string name="shared_preference_name">budget_tracking_sp</string>
+    <string name="shared_preference_total_key">total</string>
+
+    <string name="default_income_string">enter income here</string>
+</resources>

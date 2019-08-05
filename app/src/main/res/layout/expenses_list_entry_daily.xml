@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    style="@android:style/Widget.Material.Button.Borderless"
+    android:gravity="start"
+    android:id="@+id/expenseEntryParent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/expenses_list_noamount"
+        android:id="@+id/expenseListItemAmount"
+        android:paddingStart="10dp"
+        android:paddingTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/expenses_list_nodate"
+        android:id="@+id/expenseListItemDate"
+        android:paddingStart="10dp"
+        android:layout_below="@id/expenseListItemAmount"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/expenses_list_nocat"
+        android:id="@+id/expenseListItemCategory"
+        android:paddingStart="10dp"
+        android:layout_below="@id/expenseListItemDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/expenses_list_nodesc"
+        android:id="@+id/expenseListItemDescription"
+        android:paddingStart="10dp"
+        android:layout_below="@id/expenseListItemCategory" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/expenses_list_noloc"
+        android:id="@+id/expenseListItemLocation"
+        android:paddingStart="10dp"
+        android:layout_below="@id/expenseListItemDescription" />
+
+</RelativeLayout>

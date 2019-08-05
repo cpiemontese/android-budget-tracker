@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/periodSpinner"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/categorySpinner"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/periodSpinner"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/separator"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/categorySpinner"
+        android:background="@android:color/background_dark" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/expenseGraph"
+        android:layout_below="@+id/separator"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The average amount you spent is: "
+        android:id="@+id/avgLabel"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/expenseGraph"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:id="@+id/avgAmount"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/avgLabel"
+        android:layout_below="@+id/expenseGraph" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The most you spent is: "
+        android:id="@+id/highestLabel"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/avgLabel"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N/A"
+        android:id="@+id/highestAmount"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/highestLabel"
+        android:layout_below="@+id/avgAmount" />
+
+</RelativeLayout>

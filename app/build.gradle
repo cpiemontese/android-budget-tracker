@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "piemontese.cristiano.budgettracking"
+        minSdkVersion 22
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.itextpdf:itext-pdfa:5.5.9'
+    compile 'com.jjoe64:graphview:4.0.1'
+    compile 'com.itextpdf:itextg:5.5.9'
+    compile 'com.android.support:multidex:1.0.1'
+}

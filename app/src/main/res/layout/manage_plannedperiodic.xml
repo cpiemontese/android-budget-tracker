@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/browse_expenses_root"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:text="@string/createPDFBtn"
+        android:id="@+id/createPDFBtn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add expense"
+        android:id="@+id/addExpenseBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/createPDFBtn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remainingBudgetTextView"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Budget:"
+        android:textSize="16sp"
+        android:layout_below="@id/createPDFBtn" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/remainingBudgetTextView"
+        android:layout_below="@id/remainingBudgetTextView"
+        android:id="@+id/expensesListScrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/expensesListContainer">
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

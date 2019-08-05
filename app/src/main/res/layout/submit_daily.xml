@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Start of DatePicker related views -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateTextView"
+            android:text="@string/dateTextViewText"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="0dp"
+            android:layout_centerHorizontal="true" />
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePicker"
+            style="@android:style/Widget.DatePicker"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/dateTextView"/>
+
+        <!-- End of DatePicker related views -->
+
+        <!-- Start of Amount, Category and Description Edit Texts related views -->
+
+        <EditText
+            android:id="@+id/amount"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/datePicker"
+            android:layout_toEndOf="@+id/amountLabel"
+            android:selectAllOnFocus="true" />
+
+        <TextView
+            android:id="@+id/amountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/amount"
+            android:paddingStart="@dimen/createExpenseLabelsLeftPadding"
+            android:paddingEnd="@dimen/createExpenseLabelsRightPadding"
+            android:text="@string/amountLabelText" />
+
+        <EditText
+            android:id="@+id/category"
+            android:text="@string/categoryEditTextDefault"
+            android:inputType="text"
+            android:layout_below="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/amount"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/amountLabel"
+            android:selectAllOnFocus="true" />
+
+        <TextView
+            android:id="@+id/categoryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/category"
+            android:paddingStart="@dimen/createExpenseLabelsLeftPadding"
+            android:paddingEnd="@dimen/createExpenseLabelsRightPadding"
+            android:text="@string/categoryLabelText"/>
+
+        <EditText
+            android:id="@+id/description"
+            android:text="@string/descriptionEditTextDefault"
+            android:inputType="text"
+            android:layout_below="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/category"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/descriptionLabel"
+            android:selectAllOnFocus="true" />
+
+        <TextView
+            android:id="@+id/descriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/description"
+            android:paddingStart="@dimen/createExpenseLabelsLeftPadding"
+            android:paddingEnd="@dimen/createExpenseLabelsRightPadding"
+            android:text="@string/descriptionLabelText"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/placePicker"
+            android:text="@string/placePickerBtnText"
+            android:layout_below="@+id/description"
+            android:layout_toEndOf="@+id/descriptionLabel"
+            android:layout_alignStart="@+id/category"
+            android:layout_alignParentEnd="true"/>
+
+        <!-- End of Amount, Category and Description Edit Texts related views -->
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/submitBtnText"/>
+
+    </RelativeLayout>
+
+</ScrollView>

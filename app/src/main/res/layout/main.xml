@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:text="Manage daily expenses"
+            android:id="@+id/browseExpensesBtn"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="150dp"
+            android:text="@string/manage_planned_and_periodic_expenses"
+            android:textAlignment="center"
+            android:id="@+id/managePlannedPeriodicBtn"
+            android:layout_toRightOf="@+id/browseExpensesBtn" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="150dp"
+            android:text="@string/expense_statistics"
+            android:id="@+id/statisticsBtn"
+            android:layout_below="@+id/browseExpensesBtn"
+            android:layout_alignLeft="@id/browseExpensesBtn" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="150dp"
+            android:text="Add income"
+            android:id="@+id/addIncome"
+            android:layout_below="@id/managePlannedPeriodicBtn"
+            android:layout_alignStart="@id/managePlannedPeriodicBtn"
+            android:layout_toRightOf="@id/statisticsBtn" />
+
+    </RelativeLayout>
+</ScrollView>
+

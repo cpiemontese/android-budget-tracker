@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_type">
+        <item>All expenses</item>
+        <item>Last week\'s expenses</item>
+        <item>Last month\'s expenses</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>General trend</item>
+        <item>Trend by categories</item>
+    </string-array>
+
+    <string-array name="periods">
+        <item>Day by day trend</item>
+        <item>Week by week trend</item>
+        <item>Month by month trend</item>
+        <item>Year by year trend</item>
+    </string-array>
+</resources>
